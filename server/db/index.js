@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import 'dotenv/config';
+require('dotenv').config();
+const mongoose = require('mongoose');
 
 mongoose.connect(`mongodb://localhost/${process.env.DATABASE}`);
 
