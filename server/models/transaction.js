@@ -1,8 +1,8 @@
 const dbModel = require('../db/models');
 
 module.exports = {
-  createOne: (entryObj, callback) => {
-    dbModel.Transaction.create(entryObj, (err, result) => {
+  addTransaction: (entry, callback) => {
+    dbModel.Transaction.create(entry, (err, result) => {
       if (err) {
         callback(err);
       } else {
@@ -11,8 +11,8 @@ module.exports = {
     });
   },
 
-  readTransactions: (filterObj, callback) => {
-    dbModel.Transaction.find(filterObj, (err, result) => {
+  readTransactions: (filter, callback) => {
+    dbModel.Transaction.find(filter, (err, result) => {
       if (err) {
         callback(err);
       } else {
@@ -21,8 +21,7 @@ module.exports = {
     });
   },
 
-  updateTransaction: ({ id }, update, callback) => {
-    const filter = { _id: id };
+  updateTransaction: (filter, update, callback) => {
     dbModel.Transaction.updateOne(filter, update, (err, result) => {
       if (err) {
         callback(err);
