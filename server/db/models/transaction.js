@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
 const transactionSchema = new mongoose.Schema({
+  type: {
+    type: String,
+    default: 'transaction'
+  },
   date: {
     type: Date,
     default: Date.now
