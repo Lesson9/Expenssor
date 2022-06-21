@@ -19,5 +19,15 @@ module.exports = {
         res.status(200).send(result);
       }
     });
+  },
+
+  updateTransaction: (req, res) => {
+    models.Transaction.updateTransaction(req.params, req.body, (err, result) => {
+      if (err) {
+        res.status(400).send(err);
+      } else {
+        res.status(200).send(result);
+      }
+    });
   }
 };

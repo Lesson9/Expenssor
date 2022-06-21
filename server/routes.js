@@ -14,4 +14,6 @@ router.post('/transactions', controllers.Transaction.addOneTransaction);
 
 router.get('/transactions', controllers.Transaction.getTransactions);
 
+router.patch('/transactions/:id', controllers.Transaction.updateTransaction);
+
 module.exports = router;

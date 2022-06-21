@@ -19,5 +19,16 @@ module.exports = {
         callback(null, result);
       }
     });
+  },
+
+  updateTransaction: ({ id }, update, callback) => {
+    const filter = { _id: id };
+    dbModel.Transaction.updateOne(filter, update, (err, result) => {
+      if (err) {
+        callback(err);
+      } else {
+        callback(null, result);
+      }
+    });
   }
 };
