@@ -1,11 +1,13 @@
 const router = require('express').Router();
+const controllers = require('./controllers');
 
-router.get('/foo', (req, res) => {
-  res.send('wOw');
-});
+// TRANSACTIONS API
+router.post('/transactions', controllers.Transaction.addTransaction);
 
-router.post('/bar', (req, res) => {
-  res.send(req.body);
-});
+router.get('/transactions', controllers.Transaction.getTransactions);
+
+router.patch('/transactions/:_id', controllers.Transaction.updateTransaction);
+
+router.delete('/transactions/:_id', controllers.Transaction.deleteTransaction);
 
 module.exports = router;
