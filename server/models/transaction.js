@@ -30,5 +30,15 @@ module.exports = {
         callback(null, result);
       }
     });
+  },
+
+  deleteTransaction: (filter, callback) => {
+    dbModel.Transaction.deleteOne(filter, (err, result) => {
+      if (err) {
+        callback(err);
+      } else {
+        callback(null, result);
+      }
+    });
   }
 };

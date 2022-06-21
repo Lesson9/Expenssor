@@ -29,5 +29,15 @@ module.exports = {
         res.status(200).send(result);
       }
     });
+  },
+
+  deleteTransaction: (req, res) => {
+    models.Transaction.deleteTransaction(req.params, (err, result) => {
+      if (err) {
+        res.status(400).send(err);
+      } else {
+        res.status(200).send(result);
+      }
+    });
   }
 };
