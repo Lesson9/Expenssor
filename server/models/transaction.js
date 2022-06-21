@@ -9,5 +9,15 @@ module.exports = {
         callback(null, result);
       }
     });
+  },
+
+  readTransactions: (filterObj, callback) => {
+    dbModel.Transaction.find(filterObj, (err, result) => {
+      if (err) {
+        callback(err);
+      } else {
+        callback(null, result);
+      }
+    });
   }
 };

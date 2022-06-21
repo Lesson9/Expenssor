@@ -9,5 +9,15 @@ module.exports = {
         res.status(201).send(result);
       }
     });
+  },
+
+  getTransactions: (req, res) => {
+    models.Transaction.readTransactions(req.body, (err, result) => {
+      if (err) {
+        res.status(400).send(err);
+      } else {
+        res.status(200).send(result);
+      }
+    });
   }
 };
