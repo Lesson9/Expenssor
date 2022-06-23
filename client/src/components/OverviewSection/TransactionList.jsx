@@ -1,18 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import TransactionListEntry from './TransactionListEntry.jsx';
+import { TransactionContext } from './Overview.jsx';
 
 export default function TransactionList() {
+  const {display, viewAll} = useContext(TransactionContext);
+
   return (
     <div className="transactions">
       <div className="transactions-header">
         <h3>Recent Transactions</h3>
-        <span className="btn-underline">View all</span>
+        <span onClick={viewAll} className="btn-underline">View all</span>
       </div>
 
       <ul className="transaction-list">
-        <TransactionListEntry />
-        <TransactionListEntry />
-        <TransactionListEntry />
+        {display.map((entry, index) => <TransactionListEntry key={index} data={entry} />)}
       </ul>
     </div>
   );
