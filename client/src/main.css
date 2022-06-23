@@ -55,7 +55,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 16px;
+  padding: 16px 16px 48px;
 }
 
 
