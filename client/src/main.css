@@ -3,3 +3,65 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-size: 1.6rem;
+}
+
+p {
+  color: #44566C;
+}
+
+li {
+  list-style: none;
+}
+
+.heading {
+  color: #121435;
+  font-weight: 500;
+}
+
+.heading-secondary {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.heading-tertiary {
+  color: #44566C;
+  font-size: 18px;
+}
+
+
+
+section {
+  background-color: #fff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.section-header {
+  margin-bottom: 32px;
+  padding: 16px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.section-body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 16px 16px 48px;
+}
+
+
+
+.btn-underline {
+  color: #f08c00;
+  font-size: 16px;
+  text-decoration: underline;
+}
