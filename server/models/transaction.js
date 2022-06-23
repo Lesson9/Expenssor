@@ -18,7 +18,7 @@ module.exports = {
       } else {
         callback(null, result);
       }
-    });
+    }).sort({ date: -1 });
   },
 
   updateTransaction: (filter, update, callback) => {
