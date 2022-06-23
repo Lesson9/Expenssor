@@ -71,7 +71,7 @@ export default function Overview() {
   return (
     <section className="section-overview">
       <header className="section-header">
-        <h2>Overview</h2>
+        <h2 className="heading heading-secondary">Overview</h2>
         <p className="subtitle">My first money book</p>
       </header>
 

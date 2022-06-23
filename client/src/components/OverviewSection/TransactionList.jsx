@@ -8,7 +8,7 @@ export default function TransactionList() {
   return (
     <div className="transactions">
       <div className="transactions-header">
-        <h3>Recent Transactions</h3>
+        <h3 className="heading heading-tertiary">Recent Transactions</h3>
         <span onClick={viewAll} className="btn-underline">View all</span>
       </div>
 
