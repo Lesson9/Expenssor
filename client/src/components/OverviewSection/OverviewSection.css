@@ -91,11 +91,13 @@ ul {
 /* Transaction List Entry */
 .transaction-list-entry {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
   column-gap: 24px;
+  height: 40px;
 }
 
-.date {
+.transaction-date {
   color: #44566C;
   font-size: 18px;
 }
@@ -132,4 +134,5 @@ ul {
 
 .transaction-amount {
   font-size: 20px;
+  justify-self: end;
 }
