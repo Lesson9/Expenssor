@@ -37,7 +37,13 @@ li {
   font-size: 18px;
 }
 
-
+.container {
+  display: grid;
+  grid-template-columns: 2fr 4fr 3fr;
+  gap: 24px;
+  width: 1200px;
+  margin: 48px auto;
+}
 
 section {
   background-color: #fff;
@@ -46,8 +52,9 @@ section {
 }
 
 .section-header {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   padding: 16px;
+  height: 96px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
