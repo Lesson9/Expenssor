@@ -1,5 +1,6 @@
 import React from 'react';
+import Overview from './OverviewSection/Overview.jsx';
 
 export default function App() {
-  return (<h1>Hello, world!</h1>);
+  return (<Overview />);
 }

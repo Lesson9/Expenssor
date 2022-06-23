@@ -1,0 +1,135 @@
+h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #44566C;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn-underline {
+  color: #f08c00;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.section-overview {
+  width: 500px;
+  margin: 48px auto;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.section-header {
+  margin-bottom: 32px;
+  padding: 16px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.section-body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 16px;
+}
+
+.subtitle {
+  color: #f08c00;
+}
+
+/* Current Stats */
+
+.current {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.current span {
+  color: #8996A6;
+  font-size: 14px;
+}
+
+.current p {
+  margin-top: 8px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.expense {
+  color: #2b8a3e;
+}
+
+.income {
+  color: #c2255c;
+}
+
+.balance {
+  color: #121435;
+}
+
+/* Transaction List */
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Transaction List Entry */
+.transaction-list-entry {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  column-gap: 24px;
+}
+
+.date {
+  color: #44566C;
+  font-size: 18px;
+}
+
+/* Transaction Daily List */
+.transaction-daily-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Transaction Daily List Entry */
+.transaction-daily-list-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transaction-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.transaction-category {
+  color: #121435;
+  font-size: 16px;
+}
+
+.transaction-note {
+  font-size: 14px;
+  color: #44566C;
+}
+
+.transaction-amount {
+  font-size: 20px;
+}
