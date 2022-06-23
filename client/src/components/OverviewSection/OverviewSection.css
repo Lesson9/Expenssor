@@ -75,9 +75,32 @@
 
 .transaction-info {
   display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.transaction-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.icon {
+  color: #fff;
+  Fill: 1;
+
+}
+
+.transaction-text {
+  display: flex;
   flex-direction: column;
   gap: 4px;
 }
+
+
 
 .transaction-category {
   color: #121435;
