@@ -37,6 +37,24 @@ li {
   font-size: 18px;
 }
 
+.btn {
+  padding: 8px 4px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.btn-primary {
+  background-color: #f08c00;
+  color: #fff;
+}
+
+.btn-underline {
+  color: #f08c00;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
 .container {
   display: grid;
   grid-template-columns: 2fr 4fr 3fr;
@@ -65,10 +83,3 @@ section {
   padding: 16px 16px 48px;
 }
 
-
-
-.btn-underline {
-  color: #f08c00;
-  font-size: 16px;
-  text-decoration: underline;
-}

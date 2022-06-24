@@ -16,7 +16,7 @@ export default function TransactionListEntry({ data: { type, date, category, not
           {note && <p className="transaction-note">{note}</p>}
         </div>
       </div>
-      { type === 'income' ? <div className="transaction-amount" style={{color: '#c2255c'}}>$ {amount}</div> : <div className="transaction-amount" style={{color: '#2b8a3e'}}>$ {amount}</div> }
+      { type === 'income' ? <div className="transaction-amount" style={{color: '#c2255c'}}>$ {amount.toFixed(2)}</div> : <div className="transaction-amount" style={{color: '#2b8a3e'}}>$ {amount.toFixed(2)}</div> }
     </li>
   );
 }

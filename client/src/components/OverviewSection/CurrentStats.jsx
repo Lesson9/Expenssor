@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import { StatsContext } from './Overview.jsx';
+import { OverviewContext } from '../App.jsx';
 
 export default function CurrentStats() {
-  const { income, expense, balance } = useContext(StatsContext);
+  const { income, expense, balance } = useContext(OverviewContext);
 
   return (
     <div className="current">
