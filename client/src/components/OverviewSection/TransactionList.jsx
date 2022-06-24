@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import TransactionListEntry from './TransactionListEntry.jsx';
-import { TransactionContext } from './Overview.jsx';
+import { OverviewContext } from '../App.jsx';
 
 export default function TransactionList() {
-  const {display, viewAll} = useContext(TransactionContext);
+  const {displayData, viewAll} = useContext(OverviewContext);
 
   return (
     <div className="transactions">
@@ -13,7 +13,7 @@ export default function TransactionList() {
       </div>
 
       <ul className="transaction-list">
-        {display.map((entry, index) => <TransactionListEntry key={index} data={entry} />)}
+        {displayData.map((entry, index) => <TransactionListEntry key={index} data={entry} />)}
       </ul>
     </div>
   );

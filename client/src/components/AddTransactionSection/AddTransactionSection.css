@@ -1,0 +1,50 @@
+/* Tabs */
+
+.transaction-nav ul {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.transaction-nav li {
+  color: #868e96;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+main {
+  padding: 0 16px 24px;
+}
+
+form div {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ced4da;
+}
+
+form input {
+  font-size: 16px;
+  padding: 8px 0;
+  outline: none;
+  border: none;
+}
+
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.label {
+  color: #868e96;
+}
+
+.amount, .date, .category, .note {
+  display: grid;
+  grid-template-columns: 60px auto;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn-save {
+  margin-top: 48px;
+}
